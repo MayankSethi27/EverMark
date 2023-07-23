@@ -19,14 +19,8 @@ app.set('layout', './layouts/main');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-
-app.get('/', function (req, res) {
-    const locals={
-        title:'Notes',
-        description:'Free Notes App'
-    }
-  res.render('index',locals);
-});
+//main route
+app.use('/',require('./routes/index'));
 
 app.listen(port, () => {
   console.log(`app listening on port ${port}`);
