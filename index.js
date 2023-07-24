@@ -2,12 +2,17 @@ require('dotenv').config();
 
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
+const session=require('express-session');
 const path = require('path');
+const connectDB=require('./config/db');
 const app = express();
 const port = 8008 || process.env.PORT;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); // <-- Corrected the line
+
+//connected to DataBase
+connectDB();
 
 // Static files
 app.use(express.static('public'));
