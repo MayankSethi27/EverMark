@@ -19,8 +19,13 @@ app.set('layout', './layouts/main');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-//main route
+//route
 app.use('/',require('./routes/index'));
+app.use('/',require('./routes/dashboard'));
+
+app.get('*',function(req,res){
+  res.status(404).send('404 Page Not Found');
+});
 
 app.listen(port, () => {
   console.log(`app listening on port ${port}`);
