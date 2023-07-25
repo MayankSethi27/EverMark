@@ -78,7 +78,6 @@ passport.deserializeUser(function(id, done) {
     User.findById(id)
       .then((user) => {
         if (user) {
-          console.log('User found');
           done(null, user);
         } else {
           console.log('User not found');

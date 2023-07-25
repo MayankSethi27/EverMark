@@ -23,10 +23,10 @@ const UserSchema=new Schema({
         required:true
     },
     createdAt:{
-        type:Date,
+        type:String,
         default:Date.now
     }
 
 });
-
+//this 'User' name is used as ref in another models
 module.exports=mongoose.model('User',UserSchema);
