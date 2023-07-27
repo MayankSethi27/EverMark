@@ -77,10 +77,6 @@ Make sure you have the following software installed on your machine:
 
 Contributions are welcome! If you find any bugs or want to add new features, feel free to open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ---
 
 Thank you for using Evermark Note Taking Website! If you have any questions or need further assistance, please don't hesitate to contact us. Happy note-taking!
