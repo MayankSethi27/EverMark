@@ -1,6 +1,6 @@
-# Evermark Note Taking Website
+# Evermark- Note Taking Website
 
-Evermark is a note-taking website developed using Node.js, EJS, MongoDB, and Express. It allows users to create, read, update, and delete notes seamlessly. Additionally, the website features a powerful search notes feature to help users find specific notes quickly.
+Evermark is a note-taking website developed using Node.js, EJS, MongoDB, and Express. It allows users to create, read, update, and delete notes seamlessly. Additionally, the website features a powerful search notes feature to help users find specific notes quickly. The application also ensures secure user authentication using both local signup/login and Passport Google authentication.
 
 ## Table of Contents
 
